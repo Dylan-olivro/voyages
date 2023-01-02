@@ -1,10 +1,39 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
+  margin: 0%;
+  padding: 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-image: url("../ASSETS/bk1.jpg");
 }
+
+header{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+/* 
+#logo{
+  background-image: url("../ASSETS/Logo-voyages.png");
+  width: 100px;
+  height: 100px;
+  z-index: 100000000000000000;
+
+} */
+
+nav{
+  font-family: 'Roboto';
+font-style: normal;
+font-size: 25px;
+text-align: center;
+
+}
+
 ul {
+  justify-content: center;
+  align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -16,11 +45,12 @@ li {
   padding: 0;
 }
 
-a {
+.aNav {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  color: rgb(255, 255, 255);
+  
 }
 
 ul ul {
@@ -30,11 +60,14 @@ ul ul {
 }
 
 li:hover > ul {
+  background-color:
+  rgba(0, 0, 0, 0.65);
   display: block;
 }
 
 ul ul ul {
+  font-size: 20px;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 200px;
 }
