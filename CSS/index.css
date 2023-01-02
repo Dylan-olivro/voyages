@@ -10,6 +10,10 @@ body .container {
   justify-content: center;
   width: 60%;
   background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 15px;
+}
+.container a {
+  text-decoration: none;
 }
 .card {
   position: relative;
@@ -62,9 +66,10 @@ body .container {
   font-size: 2em;
 }
 .card:nth-child(1) .face.face2 {
-  background-image: url(../ASSETS/bk1.jpg);
+  background-image: url(../ASSETS/Japon/fujisan.jpg);
   border-radius: 15px;
   background-size: cover;
+  background-position: right;
 }
 .card:nth-child(2) .face.face2 {
   background-image: url(../ASSETS/bk1.jpg);
