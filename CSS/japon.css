@@ -1,0 +1,135 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  /* bannière */
+  .banniere{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("../ASSETS/Japon/banniere_japon.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+  }
+
+  /* main */
+  main {
+    margin: 7% auto 2%;
+    padding: 40px 10px;
+    justify-content: center;
+    width: 60%; 
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 15px;
+  }
+
+  .contenu_realisation{
+    width: 82%;
+    display: flex;
+  }
+  .article_real{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+  
+  .texte_real{
+    color: #e9b937;
+    margin: 20px 10px;
+    text-align: justify;
+  }
+  
+  .article_real img{
+    width: 80%;
+  }
+  h2{  
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(70, 33, 2);
+    color: rgb(231, 73, 73);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+    
+  #logo {
+    height: 100px;
+  }
+  nav {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+  }
+  
+  ul {
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1;
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .aNav {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  ul ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+  }
+  
+  li:hover > ul {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: block;
+  }
+  
+  ul ul ul {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 200px;
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    text-align: center;
+    padding: 1% 0;
+  }
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
