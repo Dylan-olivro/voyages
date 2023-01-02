@@ -1,0 +1,28 @@
+.card-france {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  border-radius: 15px;
+  width: 80%;
+  margin: 1% auto;
+  padding: 1% 0;
+}
+.title-card {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1%;
+}
+.card-france div {
+  display: flex;
+  padding: 0 2%;
+}
+.img-card {
+  width: 0%;
+  flex: 1;
+  border-radius: 15px;
+}
+.text-card {
+  flex: 2;
+  padding: 0 2%;
+  text-align: center;
+  line-height: 2;
+}

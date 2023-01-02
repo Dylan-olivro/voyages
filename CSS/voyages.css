@@ -68,6 +68,10 @@ ul ul ul {
   right: 200px;
 }
 
+ul ul li:hover {
+  border-right: 4px solid blue;
+}
+
 footer {
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
