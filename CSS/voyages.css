@@ -1,3 +1,7 @@
+:root {
+  --color-background: rgba(0, 0, 0, 0.65);
+  --color-text: #fff;
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -12,15 +16,17 @@ body {
 
 header {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--color-background);
 }
 
 #logo {
   height: 100px;
 }
+#logo:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
 nav {
-  font-family: "Roboto";
-  font-style: normal;
   font-size: 25px;
   text-align: center;
   display: flex;
@@ -47,7 +53,7 @@ li {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #fff;
+  color: var(--color-text);
 }
 
 ul ul {
@@ -57,7 +63,7 @@ ul ul {
 }
 
 li:hover > ul {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: var(--color-background);
   display: block;
 }
 
@@ -73,12 +79,12 @@ ul ul li:hover {
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.65);
-  color: #fff;
+  background-color: var(--color-background);
+  color: var(--color-text);
   text-align: center;
   padding: 1% 0;
 }
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-text);
 }

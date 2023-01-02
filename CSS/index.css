@@ -1,15 +1,12 @@
-body .container {
+.container {
   max-width: 100vw;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 35px; */
   display: flex;
   flex-wrap: wrap;
   margin: 7% auto 2%;
   padding: 40px 0;
   justify-content: center;
-  width: 60%;
-  background-color: rgba(0, 0, 0, 0.65);
+  width: 65%;
+  background-color: var(--color-background);
   border-radius: 15px;
 }
 .container a {
@@ -43,7 +40,7 @@ body .container {
   padding: 0;
 }
 .description {
-  color: #fff;
+  color: var(--color-text);
 }
 
 .face2 {
@@ -78,7 +75,7 @@ body .container {
   border-radius: 15px;
 }
 .card:nth-child(3) .face.face2 {
-  background-image: url(../ASSETS/bk1.jpg);
+  background-image: url(../ASSETS/Coree_du_sud/Korea_Seoul.jpg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
@@ -100,4 +97,33 @@ body .container {
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1100px) and (min-width: 769px) {
+  .container {
+    width: 80%;
+  }
+  .face2 h2 {
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .container {
+    width: 90%;
+  }
+  .card {
+    width: 47%;
+  }
+  .face2 h2 {
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 80%;
+  }
+  .card {
+    width: 90%;
+  }
 }
