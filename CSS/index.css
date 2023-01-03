@@ -99,6 +99,42 @@
   background-size: cover;
   border-radius: 15px;
 }
+.card:nth-child(7) .face.face2 {
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card:nth-child(8) .face.face2 {
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card:nth-child(9) .face.face2 {
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card:nth-child(10) .face.face2 {
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card:nth-child(11) .face.face2 {
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+.card:nth-child(12) .face.face2 {
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  border-radius: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 1100px) and (min-width: 769px) {
