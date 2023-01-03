@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="./CSS/voyages.css" />
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/9a09d189de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Contact</title>
+  </head>
+  <!-- BACKGROUND IMAGE STYLE -->
+  <style>
+    body {
+      background-image: url("./ASSETS/bk1.jpg");
+    }
+  </style>
+
+  <body>
+    <!-- HEADER (LOGO)+(NAV) -->
+    <header>
+      <nav>
+        <img id="logo" src="./ASSETS/Logo-voyages.png" alt="Logo" />
+        <ul>
+          <li><a class="aNav" href="index.html">DESTINATION</a></li>
+          <li>
+            <a class="aNav" href="#">PAR CONTINENT</a>
+            <ul>
+              <li>
+                <a class="aNav" href="#">Europe</a>
+                <ul>
+                  <li><a class="aNav" href="./france.html">France</a></li>
+                  <li><a class="aNav" href="./norvege.html">Norvège</a></li>
+                  <li><a class="aNav" href="./islande.html">Islande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Amérique</a>
+                <ul>
+                  <li>
+                    <a class="aNav" href="./etats_unis.html">États-Unis</a>
+                  </li>
+                  <li><a class="aNav" href="./bresil.html">Brésil</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Asie</a>
+                <ul>
+                  <li><a class="aNav" href="./japon.html">Japon</a></li>
+                  <li>
+                    <a class="aNav" href="./coree_du_sud.html">Corée du Sud</a>
+                  </li>
+                  <li><a class="aNav" href="./inde.html">Inde</a></li>
+                  <li><a class="aNav" href="./sri-lanka.html">Sri-Lanka</a></li>
+                  <li><a class="aNav" href="./thailande.html">Thaïlande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Océanie</a>
+                <ul>
+                  <li><a class="aNav" href="./australie.html">Australie</a></li>
+                  <li>
+                    <a class="aNav" href="./nouvelle-zelande.html"
+                      >Nouvelle-Zélande</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="aNav" href="#">PAR GUIDES</a>
+            <ul>
+              <li>
+                <a class="aNav" href="#">Dylan</a>
+                <ul>
+                  <li>
+                    <a class="aNav" href="coree_du_sud.html">Corée du Sud</a>
+                  </li>
+                  <li><a class="aNav" href="./france.html">France</a></li>
+                  <li><a class="aNav" href="./norvege.html">Norvège</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Gaëtan</a>
+                <ul>
+                  <li><a class="aNav" href="./australie.html">Australie</a></li>
+                  <li><a class="aNav" href="./islande.html">Islande</a></li>
+                  <li>
+                    <a class="aNav" href="./etas-unis.html">États-Unis</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Léopold</a>
+                <ul>
+                  <li><a class="aNav" href="./inde.html">Inde</a></li>
+                  <li><a class="aNav" href="./sri-lanka.html">Sri-Lanka</a></li>
+                  <li><a class="aNav" href="./thailande.html">Thaïlande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Charles</a>
+                <ul>
+                  <li><a class="aNav" href="./japon.html">Japon</a></li>
+                  <li><a class="aNav" href="./bresil.html">Brésil</a></li>
+                  <li>
+                    <a class="aNav" href="./nouvelle-zelande.html"
+                      >Nouvelle-Zélande</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main-->
+    <main>
+      <form action="#" class="form">
+        <h2 class="form--title">CONTACTER NOUS</h2>
+        <label for="name"
+          >Name <input type="name" placeholder="Ècris ton nom içi.." id="name"
+        /></label>
+        <label for="email"
+          >Email<input
+            type="email"
+            placeholder="Faites-nous savoir comment vous recontacter.."
+            id="email"
+        /></label>
+        <label for="message"
+          >Message<input
+            type="Message"
+            placeholder="Que voudriez-vous nous dire.."
+            id="message"
+        /></label>
+        <button>Send Message</button>
+        <div class="form--contact">
+          <span class="form--span"
+            ><i class="fa-solid fa-phone"></i
+            ><a href="tel:0102030405"> 01.02.03.04.05</a>
+          </span>
+          <span class="form--span"
+            ><i class="fa-solid fa-envelope"></i
+            ><a href="mailto:dylanolivro@laplateforme.io">
+              contact@laplateforme.io</a
+            >
+          </span>
+        </div>
+      </form>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        <a href="./contact.html">Nous Contacter</a> /
+        <a href="./visites.html">Lieux Visités</a>
+      </p>
+      <p>Copyright© by DLG Nueve</p>
+    </footer>
+  </body>
+</html>
