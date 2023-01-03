@@ -37,7 +37,7 @@
 /* .gallery__image:hover {
   transform: scale(1.1);
 } */
-/* .gallery__caption {
+.gallery__caption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -53,7 +53,10 @@
     rgba(255, 255, 255, 0) 100%
   );
   transition: 0.3s;
-} */
+}
+.gallery__thumb:hover .gallery__caption {
+  opacity: 1;
+}
 
 /* RESPONSIVE */
 
