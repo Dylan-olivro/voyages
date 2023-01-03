@@ -70,7 +70,7 @@
   background-position: right;
 }
 .card:nth-child(2) .face.face2 {
-  background-image: url(../ASSETS/bk1.jpg);
+  background-image: url(../ASSETS/australie/australia-canberra-ge324d3818_1280.jpg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
@@ -99,7 +99,7 @@
   background-size: cover;
   border-radius: 15px;
 }
- 
+
 /* RESPONSIVE */
 @media screen and (max-width: 1100px) and (min-width: 769px) {
   .container {
