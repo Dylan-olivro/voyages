@@ -1,3 +1,9 @@
+h1 {
+  text-align: center;
+  color: var(--color-text);
+  font-size: 3rem;
+}
+
 .gallery {
   display: flex;
   padding: 2px;
@@ -25,14 +31,15 @@
   width: 100%;
   transition: 0.3s;
   object-fit: cover;
-  /* object-fit: cover;
-  height: 100vh; */
 }
 .format1 {
   height: 75vh;
 }
 .format2 {
   height: 125vh;
+}
+.cover {
+  object-position: 30%;
 }
 /* .gallery__image:hover {
   transform: scale(1.1);
