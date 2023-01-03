@@ -1,42 +1,40 @@
-header{
-    background-color: rgb(204, 166, 100);
+header {
+  background-color: rgb(204, 166, 100);
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0% 3% 0% 3%;
-    color: white;
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 3% 0% 3%;
+  color: var(--color-text);
 }
 
-h2{
-    text-decoration: underline;
-    text-align: center;
-    font-size: 45px;
-    margin-bottom: 10%;
+h2 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 10%;
 }
 
-h3{
-    font-size: 35px;
-
+h3 {
+  font-size: 35px;
 }
-h4{
-    margin-right: 2%;
-    font-size: 35px;
-    text-align: end;
-}
-
-.map{
-    margin: 5%;
-    text-align: center;
-    width: 20%;
+h4 {
+  margin-right: 2%;
+  font-size: 35px;
+  text-align: end;
 }
 
+.map {
+  margin: 5%;
+  text-align: center;
+  width: 20%;
+}
 
-.container{
-    max-width: 100vw;
+.container {
+  max-width: 100vw;
   /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 35px; */
@@ -49,28 +47,27 @@ h4{
   background-color: rgba(204, 166, 100, 0.843);
   border-radius: 15px;
 }
-#discover p{
-    margin: 5%;
-    width: 50%;
-    line-height: 35px;
-    font-size: 20px;
+#discover p {
+  margin: 5%;
+  width: 50%;
+  line-height: 35px;
+  font-size: 20px;
+}
+#discover {
+  display: flex;
+  flex-direction: column;
+}
+.discover {
+  display: flex;
+  flex-direction: row;
+}
+.picture {
+  width: 50%;
+}
+img {
+  height: 90%;
+}
 
-}
-#discover{
-    display: flex;
-    flex-direction: column;
-}
-.discover{
-    display: flex;
-    flex-direction: row;
-}
-.picture{
-    width: 50%;
-}
-img{
-    height: 90%;
-}
-
-footer{
-    background-color: rgb(204, 166, 100);
+footer {
+  background-color: rgb(204, 166, 100);
 }
