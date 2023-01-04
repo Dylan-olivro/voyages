@@ -89,14 +89,13 @@ i {
   }
 }
 .card-title1 {
-  display: none;
   position: absolute;
   top: 0;
   width: 100%;
-  letter-spacing: 1rem;
-  font-size: 2rem;
+  /* letter-spacing: 1rem; */
+  font-size: 3rem;
   font-family: "Anton", sans-serif;
-  color: #000;
+  color: var(--color-text);
 }
 .central:hover .card-title1 {
   display: block;
