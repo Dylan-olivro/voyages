@@ -51,4 +51,41 @@ span:hover::before {
   padding: 0 2%;
   text-align: center;
   line-height: 2;
+  align-self: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .text-card {
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .bloc {
+    flex-direction: column;
+  }
+  .img-card {
+    width: 70%;
+    margin: auto;
+  }
+  .text-card {
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bloc {
+    flex-direction: column;
+  }
+  .img-card {
+    width: 100%;
+  }
+  .title-card {
+    margin: 10% 0;
+  }
+  .text-card {
+    margin: 8% 0;
+  }
+  .card-france {
+    width: 95%;
+    margin: 5% auto;
+  }
 }
