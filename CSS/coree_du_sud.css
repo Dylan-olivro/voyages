@@ -1,0 +1,162 @@
+.bloc {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+.card {
+  background-color: var(--color-background);
+  border: 1px solid black;
+  color: var(--color-text);
+  position: relative;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.card-text {
+  font-size: 1rem;
+  padding: 0 3% 3% 3%;
+  margin: auto;
+}
+i {
+  margin-right: 2%;
+}
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.left {
+  transform: rotate(-20deg) scale(0.9);
+  left: 30px;
+}
+.central {
+  z-index: 1;
+}
+.right {
+  transform: rotate(20deg) scale(0.9);
+  right: 30px;
+}
+.left:hover {
+  animation: leftCard 0.5s;
+  animation-fill-mode: both;
+}
+.central:hover {
+  animation: centralCard 0.5s;
+  animation-fill-mode: both;
+}
+.right:hover {
+  animation: rightCard 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes leftCard {
+  0% {
+    transform: rotate(-20deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(-20deg) scale(1);
+    z-index: 2;
+  }
+  100% {
+    transform: rotate(-20deg) scale(1);
+    z-index: 2;
+  }
+}
+@keyframes centralCard {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  100% {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+}
+@keyframes rightCard {
+  0% {
+    transform: rotate(20deg) scale(0.9);
+  }
+  50% {
+    transform: rotate(20deg) scale(1);
+    z-index: 2;
+  }
+  100% {
+    transform: rotate(20deg) scale(1);
+    z-index: 2;
+  }
+}
+.card-title1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  letter-spacing: 1rem;
+  font-size: 2rem;
+  font-family: "Anton", sans-serif;
+  color: #000;
+}
+.central:hover .card-title1 {
+  display: block;
+}
+.demographie {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.card-title {
+  margin: 12px;
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .left {
+    transform: rotate(0deg) scale(1);
+    left: 0px;
+  }
+  .right {
+    transform: rotate(0deg) scale(1);
+    right: 0px;
+  }
+  .left:hover {
+    animation: none;
+  }
+  .central:hover {
+    animation: none;
+  }
+  .right:hover {
+    animation: none;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bloc {
+    flex-direction: column;
+    margin: 20% 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .left {
+    transform: rotate(0deg) scale(1);
+    left: 0px;
+  }
+  .central {
+    z-index: 1;
+  }
+  .right {
+    transform: rotate(0deg) scale(1);
+    right: 0px;
+  }
+  .left:hover {
+    animation: none;
+  }
+  .central:hover {
+    animation: none;
+  }
+  .right:hover {
+    animation: none;
+  }
+}

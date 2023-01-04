@@ -83,7 +83,7 @@
   border-radius: 15px;
 }
 .card:nth-child(4) .face.face2 {
-  background-image: url(../ASSETS/bk1.jpg);
+  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
@@ -95,19 +95,20 @@
   border-radius: 15px;
 }
 .card:nth-child(6) .face.face2 {
-  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  background-image: url(../ASSETS/etats-unis/Accueil.webp);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
 }
 .card:nth-child(7) .face.face2 {
-  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  background-image: url(../ASSETS/France/BG-France.jpg);
+  background-position: 80%;
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
 }
 .card:nth-child(8) .face.face2 {
-  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  background-image: url(../ASSETS/Inde/photo1.jpg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
@@ -119,19 +120,19 @@
   border-radius: 15px;
 }
 .card:nth-child(10) .face.face2 {
-  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  background-image: url(../ASSETS/Islande/cottages-campagne-islande.1546209.w740.jpeg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
 }
 .card:nth-child(11) .face.face2 {
-  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  background-image: url(../ASSETS/Norvege/BG-Norvege.jpg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;
 }
 .card:nth-child(12) .face.face2 {
-  background-image: url(../ASSETS/Sri-lanka/pageaccueil.jpg);
+  background-image: url(../ASSETS/Thailand/bk.jpg);
   border-radius: 15px;
   background-size: cover;
   border-radius: 15px;

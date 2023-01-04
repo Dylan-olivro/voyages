@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script defer src="JS/animation_burger.js"></script>
     <title>Brésil</title>
   </head>
   <!-- BACKGROUND IMAGE STYLE -->
@@ -26,33 +27,17 @@
   <body>
     <!-- HEADER (LOGO)+(NAV) -->
     <header>
+      <img id="logo" src="./ASSETS/Logo-voyages.png" alt="Logo" />
       <nav>
-        <img id="logo" src="./ASSETS/Logo-voyages.png" alt="Logo" />
+        <div id="hamburger"><span id="burger"></span></div>
         <ul>
           <li><a class="aNav" href="index.html">DESTINATION</a></li>
           <li>
-            <a class="aNav" href="#">PAR CONTINENT</a>
+            <a class="aNav" href="#">CONTINENT</a>
             <ul>
               <li>
-                <a class="aNav" href="#">Europe</a>
-                <ul>
-                  <li><a class="aNav" href="./france.html">France</a></li>
-                  <li><a class="aNav" href="./norvege.html">Norvège</a></li>
-                  <li><a class="aNav" href="./islande.html">Islande</a></li>
-                </ul>
-              </li>
-              <li>
-                <a class="aNav" href="#">Amérique</a>
-                <ul>
-                  <li>
-                    <a class="aNav" href="./etats_unis.html">États-Unis</a>
-                  </li>
-                  <li><a class="aNav" href="./bresil.html">Brésil</a></li>
-                </ul>
-              </li>
-              <li>
                 <a class="aNav" href="#">Asie</a>
-                <ul>
+                <ul class="pays">
                   <li><a class="aNav" href="./japon.html">Japon</a></li>
                   <li>
                     <a class="aNav" href="./coree_du_sud.html">Corée du Sud</a>
@@ -63,8 +48,26 @@
                 </ul>
               </li>
               <li>
+                <a class="aNav" href="#">Europe</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./france.html">France</a></li>
+                  <li><a class="aNav" href="./norvege.html">Norvège</a></li>
+                  <li><a class="aNav" href="./islande.html">Islande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Amérique</a>
+                <ul class="pays">
+                  <li>
+                    <a class="aNav" href="./etats_unis.html">États-Unis</a>
+                  </li>
+                  <li><a class="aNav" href="./bresil.html">Brésil</a></li>
+                </ul>
+              </li>
+
+              <li>
                 <a class="aNav" href="#">Océanie</a>
-                <ul>
+                <ul class="pays">
                   <li><a class="aNav" href="./australie.html">Australie</a></li>
                   <li>
                     <a class="aNav" href="./nouvelle-zelande.html"
@@ -76,11 +79,11 @@
             </ul>
           </li>
           <li>
-            <a class="aNav" href="#">PAR GUIDES</a>
+            <a class="aNav" href="#">GUIDES</a>
             <ul>
               <li>
                 <a class="aNav" href="#">Dylan</a>
-                <ul>
+                <ul class="pays">
                   <li>
                     <a class="aNav" href="coree_du_sud.html">Corée du Sud</a>
                   </li>
@@ -90,7 +93,7 @@
               </li>
               <li>
                 <a class="aNav" href="#">Gaëtan</a>
-                <ul>
+                <ul class="pays">
                   <li><a class="aNav" href="./australie.html">Australie</a></li>
                   <li><a class="aNav" href="./islande.html">Islande</a></li>
                   <li>
@@ -100,7 +103,7 @@
               </li>
               <li>
                 <a class="aNav" href="#">Léopold</a>
-                <ul>
+                <ul class="pays">
                   <li><a class="aNav" href="./inde.html">Inde</a></li>
                   <li><a class="aNav" href="./sri-lanka.html">Sri-Lanka</a></li>
                   <li><a class="aNav" href="./thailande.html">Thaïlande</a></li>
@@ -108,7 +111,7 @@
               </li>
               <li>
                 <a class="aNav" href="#">Charles</a>
-                <ul>
+                <ul class="pays">
                   <li><a class="aNav" href="./japon.html">Japon</a></li>
                   <li><a class="aNav" href="./bresil.html">Brésil</a></li>
                   <li>
@@ -130,115 +133,207 @@
     </h1>
 
     <main>
-        <div class="container">
+      <div class="container">
         <div class="colonne">
-            <div class="contenu bc-grey">
-                <h2>HISTOIRE</h2>
-    
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/drapeau.png" alt="Drapeau du Brésil">
-                    
-                    <div class="text">
-                        <h3>Le drapeau national</h3>
-                        <p>Le premier drapeau brésilien date de 1822, date de la déclaration d’indépendance du Brésil. A l’origine les couleurs vertes et jaunes représentaient les couleurs des maisons royales ayant régné sur le Brésil : le vert des Bragance et l’or des Habsbourg. Ces couleurs ont pris une toute autre signification avec le temps et représentent désormais les richesses brésiliennes : le vert de l’Amazonie et l’or du sous-sol brésilien.</p>
-                    </div>
-                    </a>
-                </div>
-    
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/colonisation.jpg" alt="Colonisation du pays">
-                    
-                    <div class="text">
-                        <h3>Colonisation portugaise</h3>
-                        <p>Au XVIe siècle, les Portugais entament la conquête puis la mise en valeur de la Terre de la Véritable Croix, le premier nom du Brésil. Considérée longtemps comme le point de départ de l’histoire du pays, cette époque se distingue par l’exportation intensive de matières premières et par une importante traite négrière. Plusieurs avancées économiques et institutionnelles obtenues au début du XIXe siècle vont favoriser la fin de la période coloniale et remettre en cause la tutelle de Lisbonne.</p>
-                    </div>
-                    </a>
-                </div>
-    
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/independance.jpg" alt="Indépendance du Brésil">
-                    
-                    <div class="text">
-                        <h3>L'indépendance</h3>
-                        <p>La guerre contre le Portugal terminée, de longues négociations sont menées avec Lisbonne afin d'obtenir une reconnaissance officielle de l'indépendance de la part de l'ancienne métropole. Après des mois de pourparlers, un traité est finalement conclu en ce sens à Rio de Janeiro le 29 août 1825.</p>
-                    </div>
-                    </a>
-                </div>
+          <div class="contenu bc-grey">
+            <h2>HISTOIRE</h2>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/drapeau.png"
+                alt="Drapeau du Brésil"
+              />
+
+              <div class="text">
+                <h3>Le drapeau national</h3>
+                <p>
+                  Le premier drapeau brésilien date de 1822, date de la
+                  déclaration d’indépendance du Brésil. A l’origine les couleurs
+                  vertes et jaunes représentaient les couleurs des maisons
+                  royales ayant régné sur le Brésil : le vert des Bragance et
+                  l’or des Habsbourg. Ces couleurs ont pris une toute autre
+                  signification avec le temps et représentent désormais les
+                  richesses brésiliennes : le vert de l’Amazonie et l’or du
+                  sous-sol brésilien.
+                </p>
+              </div>
             </div>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/colonisation.jpg"
+                alt="Colonisation du pays"
+              />
+
+              <div class="text">
+                <h3>Colonisation portugaise</h3>
+                <p>
+                  Au XVIe siècle, les Portugais entament la conquête puis la
+                  mise en valeur de la Terre de la Véritable Croix, le premier
+                  nom du Brésil. Considérée longtemps comme le point de départ
+                  de l’histoire du pays, cette époque se distingue par
+                  l’exportation intensive de matières premières et par une
+                  importante traite négrière. Plusieurs avancées économiques et
+                  institutionnelles obtenues au début du XIXe siècle vont
+                  favoriser la fin de la période coloniale et remettre en cause
+                  la tutelle de Lisbonne.
+                </p>
+              </div>
+            </div>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/independance.jpg"
+                alt="Indépendance du Brésil"
+              />
+
+              <div class="text">
+                <h3>L'indépendance</h3>
+                <p>
+                  La guerre contre le Portugal terminée, de longues négociations
+                  sont menées avec Lisbonne afin d'obtenir une reconnaissance
+                  officielle de l'indépendance de la part de l'ancienne
+                  métropole. Après des mois de pourparlers, un traité est
+                  finalement conclu en ce sens à Rio de Janeiro le 29 août 1825.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    
+
         <div class="colonne">
-            <div class="contenu bc-grey">
-                <h2>GEOGRAPHIE</h2>
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/plan_proche.jpg" alt="Plan vue rapprochée">
-                    
-                    <div class="text">
-                        <h3>Démographie</h3>
-                        <p>Au dernier recensement datant de 2010, la population du Brésil s'élève à 185 712 713 habitants. Il est le cinquième pays au monde pour sa population. Elle se repartit principalement sur le littoral et dans les régions Sud-Est et Nord-Est, où se situent également les principales agglomérations du pays : São Paulo, Rio de Janeiro et Salvador. São Paulo, avec plus de 11 millions d'habitants, est la plus grande ville d'Amérique du Sud.</p>
-                    </div>
-                    </a>
-                </div>
-    
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/plan_large.png" alt="Plan large sur le globe">
-                    
-                    <div class="text">
-                        <h3>Superficie</h3>
-                        <p>L'État territorial a une superficie de 8.515.770 km² et une longueur totale de côtes de 7.491 km. Cette masse terrestre correspond à environ 15,5 fois la taille de la France. Le Brésil est ainsi le troisième plus grand pays sur le double continent américain en termes de superficie après Canada et USA et le cinquième plus grand pays du monde.</p>
-                    </div>
-                    </a>
-                </div>
-    
-                <div class="rubrique">
-                    <img class="image" src=".//ASSETS/Bresil/relief.jpg" alt="Relief du pays">
-                    
-                    <div class="text">
-                        <h3>Relief</h3>
-                        <p>Le Brésil est un pays au relief modeste. 40 % du territoire national se situe à moins de 200 m d'altitude, 45 % entre 200 m et 600 m et 12 % entre 600 m et 900 m. Seuls 3 % constituent les zones montagneuses, dépassant les 900 m d'altitude. Les principales formes de relief du pays sont les plaines et des plateaux.</p>
-                    </div>
-                    </a>
-                </div>
+          <div class="contenu bc-grey">
+            <h2>GEOGRAPHIE</h2>
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/plan_proche.jpg"
+                alt="Plan vue rapprochée"
+              />
+
+              <div class="text">
+                <h3>Démographie</h3>
+                <p>
+                  Au dernier recensement datant de 2010, la population du Brésil
+                  s'élève à 185 712 713 habitants. Il est le cinquième pays au
+                  monde pour sa population. Elle se repartit principalement sur
+                  le littoral et dans les régions Sud-Est et Nord-Est, où se
+                  situent également les principales agglomérations du pays : São
+                  Paulo, Rio de Janeiro et Salvador. São Paulo, avec plus de 11
+                  millions d'habitants, est la plus grande ville d'Amérique du
+                  Sud.
+                </p>
+              </div>
             </div>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/plan_large.png"
+                alt="Plan large sur le globe"
+              />
+
+              <div class="text">
+                <h3>Superficie</h3>
+                <p>
+                  L'État territorial a une superficie de 8.515.770 km² et une
+                  longueur totale de côtes de 7.491 km. Cette masse terrestre
+                  correspond à environ 15,5 fois la taille de la France. Le
+                  Brésil est ainsi le troisième plus grand pays sur le double
+                  continent américain en termes de superficie après Canada et
+                  USA et le cinquième plus grand pays du monde.
+                </p>
+              </div>
+            </div>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src=".//ASSETS/Bresil/relief.jpg"
+                alt="Relief du pays"
+              />
+
+              <div class="text">
+                <h3>Relief</h3>
+                <p>
+                  Le Brésil est un pays au relief modeste. 40 % du territoire
+                  national se situe à moins de 200 m d'altitude, 45 % entre 200
+                  m et 600 m et 12 % entre 600 m et 900 m. Seuls 3 % constituent
+                  les zones montagneuses, dépassant les 900 m d'altitude. Les
+                  principales formes de relief du pays sont les plaines et des
+                  plateaux.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    
+
         <div class="colonne">
-            <div class="contenu bc-grey">
-                <h2>FOOTBALL</h2>
-                <div class="rubrique">
-                    <img class="image2" src="./ASSETS/Bresil/ecusson.png" alt="Ecusson de l'équique nationale">
-                    
-                    <div class="text">
-                        <h3>Le pays du football</h3>
-                        <p>Le football est le sport le plus populaire au Brésil. Introduit par le britannico-brésilien Charles William Miller en 1894 à São Paulo, le football est devenu progressivement la passion d'une nation qui se considère, malgré le fait que ce sport soit né en Angleterre, comme «o país do futebol» (le pays du football).</p>
-                    </div>
-                    </a>
-                </div>
-    
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/pelé.jpg" alt="Le joueur Pelé">
-                    
-                    <div class="text">
-                        <h3>Le « roi » Pelé</h3>
-                        <p>Figure majeure du football, Pelé est considéré comme le plus grand joueur de tous les temps. Surnommé O Rei (« le roi »), Pelé est l'unique joueur à avoir remporté trois fois la Coupe du monde de football, en 1958, 1962 et 1970.</p>
-                    </div>
-                    </a>
-                </div>
-    
-                <div class="rubrique">
-                    <img class="image" src="./ASSETS/Bresil/stade.jpg" alt="Stade Maracana">
-                    
-                    <div class="text">
-                        <h3>Stade Maracana</h3>
-                        <p>Au moment de sa construction, le stade Maracana était le plus grand stade du monde, avec une capacité de 200 000 spectateurs. Il fut progressivement réduit à 78 838 places, par sécurité.</p>
-                    </div>
-                    </a>
-                </div>
+          <div class="contenu bc-grey">
+            <h2>FOOTBALL</h2>
+            <div class="rubrique">
+              <img
+                class="image2"
+                src="./ASSETS/Bresil/ecusson.png"
+                alt="Ecusson de l'équique nationale"
+              />
+
+              <div class="text">
+                <h3>Le pays du football</h3>
+                <p>
+                  Le football est le sport le plus populaire au Brésil.
+                  Introduit par le britannico-brésilien Charles William Miller
+                  en 1894 à São Paulo, le football est devenu progressivement la
+                  passion d'une nation qui se considère, malgré le fait que ce
+                  sport soit né en Angleterre, comme «o país do futebol» (le
+                  pays du football).
+                </p>
+              </div>
             </div>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/pelé.jpg"
+                alt="Le joueur Pelé"
+              />
+
+              <div class="text">
+                <h3>Le « roi » Pelé</h3>
+                <p>
+                  Figure majeure du football, Pelé est considéré comme le plus
+                  grand joueur de tous les temps. Surnommé O Rei (« le roi »),
+                  Pelé est l'unique joueur à avoir remporté trois fois la Coupe
+                  du monde de football, en 1958, 1962 et 1970.
+                </p>
+              </div>
+            </div>
+
+            <div class="rubrique">
+              <img
+                class="image"
+                src="./ASSETS/Bresil/stade.jpg"
+                alt="Stade Maracana"
+              />
+
+              <div class="text">
+                <h3>Stade Maracana</h3>
+                <p>
+                  Au moment de sa construction, le stade Maracana était le plus
+                  grand stade du monde, avec une capacité de 200 000
+                  spectateurs. Il fut progressivement réduit à 78 838 places,
+                  par sécurité.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </main>
-        <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
       <p>
         <a href="./contact.html">Nous Contacter</a> /
