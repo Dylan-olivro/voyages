@@ -73,3 +73,44 @@ img {
 footer {
   background-color: rgb(204, 166, 100);
 }
+
+@media screen and (max-width: 768px) {
+  h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10%;
+  }
+  
+  h3 {
+    margin-left: 4%;
+    font-size: 35px;
+    text-align: center;
+  }
+  h4 {
+    margin-right: 7%;
+    font-size: 35px;
+    text-align: center;
+  }
+  
+
+#discover p{
+  margin: 1%;
+  width: 100%;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+   .discover{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .discover img{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+  }
+}
