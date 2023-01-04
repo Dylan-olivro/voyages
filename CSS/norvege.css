@@ -51,7 +51,7 @@ h1 {
   padding: 25px 15px 15px;
   width: 100%;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 1.5rem;
   color: white;
   opacity: 0;
   background: linear-gradient(
@@ -67,4 +67,39 @@ h1 {
 
 /* RESPONSIVE */
 
-/* Changer .gallery__column width 50% */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .gallery__column {
+    width: 50%;
+    margin: auto;
+  }
+  .gallery__caption {
+    width: 80%;
+  }
+  .format1 {
+    height: 35vh;
+  }
+  .format2 {
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .gallery__column {
+    width: 100%;
+    margin: auto;
+  }
+  .gallery__caption {
+    width: 80%;
+  }
+  .format1 {
+    height: 35vh;
+  }
+  .format2 {
+    height: 75vh;
+  }
+}
