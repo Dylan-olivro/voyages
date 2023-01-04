@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="./CSS/voyages.css" />
+    <link rel="stylesheet" href="./CSS/etats-unis.css" />
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      type="text/javascript"
+      src="./JS/animation&burger.js"
+    ></script>
+    <title>Etats-unis</title>
+  </head>
+  <!-- BACKGROUND IMAGE STYLE -->
+  <style>
+    body {
+      background-image: url("./ASSETS/Japon/fujisan.jpg");
+    }
+  </style>
+
+  <body>
+    <!-- HEADER (LOGO)+(NAV) -->
+    <header>
+      <img id="logo" src="./ASSETS/Logo-voyages.png" alt="Logo" />
+      <nav>
+        <div id="hamburger"><span id="burger"></span></div>
+        <ul>
+          <li><a class="aNav" href="index.html">DESTINATION</a></li>
+          <li>
+            <a class="aNav" href="#">CONTINENT</a>
+            <ul>
+              <li>
+                <a class="aNav" href="#">Asie</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./japon.html">Japon</a></li>
+                  <li>
+                    <a class="aNav" href="./coree_du_sud.html">Corée du Sud</a>
+                  </li>
+                  <li><a class="aNav" href="./inde.html">Inde</a></li>
+                  <li><a class="aNav" href="./sri-lanka.html">Sri-Lanka</a></li>
+                  <li><a class="aNav" href="./thailande.html">Thaïlande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Europe</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./france.html">France</a></li>
+                  <li><a class="aNav" href="./norvege.html">Norvège</a></li>
+                  <li><a class="aNav" href="./islande.html">Islande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Amérique</a>
+                <ul class="pays">
+                  <li>
+                    <a class="aNav" href="./etats_unis.html">États-Unis</a>
+                  </li>
+                  <li><a class="aNav" href="./bresil.html">Brésil</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a class="aNav" href="#">Océanie</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./australie.html">Australie</a></li>
+                  <li>
+                    <a class="aNav" href="./nouvelle-zelande.html"
+                      >Nouvelle-Zélande</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="aNav" href="#">GUIDES</a>
+            <ul>
+              <li>
+                <a class="aNav" href="#">Dylan</a>
+                <ul class="pays">
+                  <li>
+                    <a class="aNav" href="coree_du_sud.html">Corée du Sud</a>
+                  </li>
+                  <li><a class="aNav" href="./france.html">France</a></li>
+                  <li><a class="aNav" href="./norvege.html">Norvège</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Gaëtan</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./australie.html">Australie</a></li>
+                  <li><a class="aNav" href="./islande.html">Islande</a></li>
+                  <li>
+                    <a class="aNav" href="./etas-unis.html">États-Unis</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Léopold</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./inde.html">Inde</a></li>
+                  <li><a class="aNav" href="./sri-lanka.html">Sri-Lanka</a></li>
+                  <li><a class="aNav" href="./thailande.html">Thaïlande</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="aNav" href="#">Charles</a>
+                <ul class="pays">
+                  <li><a class="aNav" href="./japon.html">Japon</a></li>
+                  <li><a class="aNav" href="./bresil.html">Brésil</a></li>
+                  <li>
+                    <a class="aNav" href="./nouvelle-zelande.html"
+                      >Nouvelle-Zélande</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- bannière
+    <div class="banniere"></div> -->
+
+    <!-- MAIN -->
+    <main>
+      <h1>ETATS-UNIS</h1>
+      <section>
+        <video id="slider" autoplay muted loop>
+          <source src="./ASSETS/etats-unis/video1.mp4" type="video/mp4" />
+        </video>
+        <ul class="navigation">
+          <li onclick="videoUrl('./ASSETS/etats-unis/video1.mp4')">
+            <img src="thumb1" alt="" />
+            <h2>Drapeau Américain</h2>
+          </li>
+          <li onclick="videoUrl('./ASSETS/etats-unis/video2.mp4')">
+            <img src="thumb2" alt="" />
+            <h2>Statue de la liberté</h2>
+          </li>
+          <li onclick="videoUrl('./ASSETS/etats-unis/video3.mp4')">
+            <img src="thumb3" alt="" />
+            <h2>Rue de New-York</h2>
+          </li>
+          <li onclick="videoUrl('./ASSETS/etats-unis/video4.mp4')">
+            <img src="thumb4" alt="" />
+            <h2>Vue satellite</h2>
+          </li>
+          <li onclick="videoUrl('./ASSETS/etats-unis/video5.mp4')">
+            <img src="thumb5" alt="" />
+            <h2>Broadway</h2>
+          </li>
+        </ul>
+      </section>
+      <script type="text/javascript">
+        function videoUrl(hmmmmm) {
+          document.getElementById("slider").src = hmmmmm;
+        }
+      </script>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p><a href="#">Nous Contacter</a> / <a href="#">Lieux Visités</a></p>
+      <p>Copyright© by DLG Nueve</p>
+    </footer>
+  </body>
+</html>
