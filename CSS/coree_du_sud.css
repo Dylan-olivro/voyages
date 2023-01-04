@@ -8,15 +8,14 @@
   border: 1px solid black;
   color: var(--color-text);
   position: relative;
-  width: 25vw;
-  height: 70vh;
+  width: 300px;
+  height: 400px;
   text-align: center;
   box-sizing: border-box;
 }
 .card-text {
-  text-align: left;
   font-size: 1rem;
-  padding: 3%;
+  padding: 0 3% 3% 3%;
   margin: auto;
 }
 i {
@@ -92,7 +91,7 @@ i {
 .card-title1 {
   display: none;
   position: absolute;
-  top: 5%;
+  top: 0;
   width: 100%;
   letter-spacing: 1rem;
   font-size: 2rem;
@@ -101,4 +100,63 @@ i {
 }
 .central:hover .card-title1 {
   display: block;
+}
+.demographie {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+.card-title {
+  margin: 12px;
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .left {
+    transform: rotate(0deg) scale(1);
+    left: 0px;
+  }
+  .right {
+    transform: rotate(0deg) scale(1);
+    right: 0px;
+  }
+  .left:hover {
+    animation: none;
+  }
+  .central:hover {
+    animation: none;
+  }
+  .right:hover {
+    animation: none;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bloc {
+    flex-direction: column;
+    margin: 20% 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .left {
+    transform: rotate(0deg) scale(1);
+    left: 0px;
+  }
+  .central {
+    z-index: 1;
+  }
+  .right {
+    transform: rotate(0deg) scale(1);
+    right: 0px;
+  }
+  .left:hover {
+    animation: none;
+  }
+  .central:hover {
+    animation: none;
+  }
+  .right:hover {
+    animation: none;
+  }
 }

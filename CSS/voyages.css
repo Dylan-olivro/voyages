@@ -64,6 +64,9 @@ ul li:hover > ul > li {
 ul ul li:hover {
   border-right: 4px solid var(--color-text);
 }
+ul ul li {
+  border-right: 4px solid transparent;
+}
 .pays {
   position: absolute;
   right: 140px;
