@@ -1,33 +1,3 @@
-* {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  
-  header {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
-  }
-  /* bannière
-  .banniere{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url("../ASSETS/Japon/banniere_japon.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 150px;
-    background-position: center;
-  } */
-
   /* main */
   main {
     /* position: absolute; */
@@ -60,7 +30,7 @@
   width: 100%;
   /* height: 100%; */
   transform-style: preserve-3d; 
-  animation: rotate360 30s infinite forwards linear;
+  animation: rotate360 45s infinite forwards linear;
 }
 .carousel:hover{
   animation-play-state: paused;
@@ -76,6 +46,7 @@
   right: 10px;
   background-size: cover;
   display: flex;
+  justify-content: center;
   border-radius: 10px;
 }
 
@@ -88,34 +59,39 @@ span {
   margin: auto auto 5px auto;
   font-size: 2rem;
   -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: rgb(70, 33, 2);
+  -webkit-text-stroke-color: green;
   text-align: center;
   color: white;
 }
 
 .carousel_face:nth-child(1) {
-  background-image: url("../ASSETS/Japon/tokyo.jpg");
+  background-image: url("../ASSETS/Japon/drapeau.png");
   transform: rotateY(  0deg) translateZ(430px); 
   opacity: 0.5;
 }
-.carousel_face:nth-child(2) { 
-  background-image: url("../ASSETS/Japon/kyoto.jpg");
-  transform: rotateY( 72deg) translateZ(430px); 
-  opacity: 0.5;
-  }
-.carousel_face:nth-child(3) {
-  background-image: url("../ASSETS/Japon/osaka.jpg");
-  transform: rotateY( 144deg) translateZ(430px);
-  opacity: 0.5; 
-  }
-.carousel_face:nth-child(4) {
-  background-image: url("../ASSETS/Japon/hiroshima.jpg");
-  transform: rotateY(216deg) translateZ(430px); 
+.carousel_face:nth-child(2) {
+  background-image: url("../ASSETS/Japon/tokyo.jpg");
+  transform: rotateY(  60deg) translateZ(430px); 
   opacity: 0.5;
 }
-.carousel_face:nth-child(5) { 
+.carousel_face:nth-child(3) { 
+  background-image: url("../ASSETS/Japon/kyoto.jpg");
+  transform: rotateY( 120deg) translateZ(430px); 
+  opacity: 0.5;
+  }
+.carousel_face:nth-child(4) {
+  background-image: url("../ASSETS/Japon/osaka.jpg");
+  transform: rotateY( 180deg) translateZ(430px);
+  opacity: 0.5; 
+  }
+.carousel_face:nth-child(5) {
+  background-image: url("../ASSETS/Japon/hiroshima.jpg");
+  transform: rotateY(240deg) translateZ(430px); 
+  opacity: 0.5;
+}
+.carousel_face:nth-child(6) { 
   background-image: url("../ASSETS/Japon/kurashiki.jpg");
- transform: rotateY(288deg) translateZ(430px);
+ transform: rotateY(300deg) translateZ(430px);
  opacity: 0.5; 
 }
 
@@ -140,22 +116,6 @@ span {
   transition: 0.5s;
 }
 .carousel_face:nth-child(6):hover{
-  opacity: 1;
-  transition: 0.5s;
-}
-.carousel_face:nth-child(7):hover{
-  opacity: 1;
-  transition: 0.5s;
-}
-.carousel_face:nth-child(8):hover{
-  opacity: 1;
-  transition: 0.5s;
-}
-.carousel_face:nth-child(9):hover{
-  opacity: 1;
-  transition: 0.5s;
-}
-.carousel_face:nth-child(10):hover{
   opacity: 1;
   transition: 0.5s;
 }
@@ -195,71 +155,3 @@ span {
   } */
 
 /* fin carousel */
-
-
-
-    
-  #logo {
-    height: 100px;
-  }
-  nav {
-    font-family: "Roboto";
-    font-style: normal;
-    font-size: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 10px;
-  }
-  
-  ul {
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    z-index: 1;
-  }
-  
-  li {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .aNav {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  ul ul {
-    display: none;
-    position: absolute;
-    width: 200px;
-  }
-  
-  li:hover > ul {
-    background-color: rgba(0, 0, 0, 0.65);
-    display: block;
-  }
-  
-  ul ul ul {
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-    right: 200px;
-  }
-  
-  footer {
-    background-color: rgba(0, 0, 0, 0.65);
-    color: #fff;
-    text-align: center;
-    padding: 1% 0;
-  }
-  footer a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
