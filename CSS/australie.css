@@ -89,6 +89,7 @@ h1 {
 
 .content {
     display: flex;
+    justify-content: space-between;
 }
 
 .block-image img {
