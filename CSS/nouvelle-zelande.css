@@ -1,0 +1,89 @@
+h1 {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 3rem;
+    position: relative;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+h1 img{
+  width: 5%;
+  border-radius: 5px;
+}  
+h2{
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    bottom: -100px;
+}
+main img{
+    border-radius: 10px;
+    width: 100%;
+}
+.ville{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+main img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.iles{
+    display: flex;
+    margin-top: 20%;
+}
+main a {
+    margin: 15px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--color-background);
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(77, 77, 77, .7); */
+    transition: all .4s;
+    margin-bottom: 0px;
+  }
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal_content {
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    border-radius: 10px;
+    position: relative;
+    width: 1100px;
+    background: var(--color-background);
+    padding: 1.5em 2em;
+    margin-top: 200px;
+  }
+  
+  .modal_close {
+    /* background-color: red; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+  }
