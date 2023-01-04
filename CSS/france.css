@@ -7,6 +7,7 @@ h1 {
 span {
   position: relative;
   padding: 1% 2%;
+  font-family: "Anton", sans-serif;
 }
 span::before {
   content: "";
