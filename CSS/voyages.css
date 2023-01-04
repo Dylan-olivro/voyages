@@ -170,3 +170,56 @@ footer a {
     display: block;
   }
 }
+  /* Animation si besoin ! Juste a appliquer dans une class pour faire marcher l'animation */
+ 
+  *{
+    scroll-behavior: smooth;
+  }
+
+/* VERTICAL TOP */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ____________ */
+
+/* HORIZONTAL RIGHT */
+
+.revealHR {
+position: relative;
+transform: translateX(150px);
+opacity: 0;
+transition: 2s all ease;
+}
+
+.revealHR.active {
+transform: translateX(0);
+opacity: 1;
+} 
+
+/* ________________ */
+
+/* HORIZONTAL LEFT */
+
+.revealHL {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealHL.active {
+  transform: translateX(0);
+  opacity: 1;
+} 
+
+/* _______________ */
