@@ -30,7 +30,7 @@
   width: 100%;
   /* height: 100%; */
   transform-style: preserve-3d; 
-  animation: rotate360 30s infinite forwards linear;
+  animation: rotate360 45s infinite forwards linear;
 }
 .carousel:hover{
   animation-play-state: paused;
@@ -59,7 +59,7 @@ span {
   margin: auto auto 5px auto;
   font-size: 2rem;
   -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: rgb(70, 33, 2);
+  -webkit-text-stroke-color: green;
   text-align: center;
   color: white;
 }
