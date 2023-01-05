@@ -5,13 +5,6 @@
 * {
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
-  
-
-}
-
-html,body{
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 body {
@@ -81,7 +74,7 @@ ul ul li {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.btn{
+.btn {
   border: 2px solid rgba(0, 0, 0, 0.6);
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50px;
@@ -96,7 +89,7 @@ ul ul li {
 #link-btn {
   color: #000;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgba(255, 255, 255, 1);
   transition: 0.3s;
 }
@@ -113,63 +106,60 @@ footer a {
 }
 
 /* MEDIA QUERY POUR MOBILE / BURGER */
-@media screen and (max-width: 768px) {
-
-  html,body{
-    overflow-y: scroll;
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  main {
     overflow-x: hidden;
   }
-
-  header{
+  header {
     display: flex;
     flex-direction: column;
   }
-  
-  .aNav{
-   font-size: 15px;
+
+  .aNav {
+    font-size: 15px;
   }
 
-  h2{
+  h2 {
     text-decoration: underline;
     text-align: center;
     font-size: 10px;
     margin-bottom: 10%;
   }
 
-  #link-btn{
+  #link-btn {
     display: none;
   }
 }
 
-@media screen and (max-width: 426px) {
-
-  html,body{
-    overflow-y: scroll;
+@media screen and (max-width: 425px) {
+  main {
     overflow-x: hidden;
   }
-
-  header{
+  header {
     display: flex;
     flex-direction: column;
   }
-  
-  .pays{
-   font-size: 10px;
-  }
 
-  h2{
+  .pays {
+    font-size: 10px;
+    right: 120px;
+  }
+  .aNav {
+    padding: 10px 10px;
+  }
+  h2 {
     text-decoration: underline;
     text-align: center;
     font-size: 8px;
     margin-bottom: 10%;
   }
 
-  #link-btn{
+  #link-btn {
     display: none;
   }
 }
 
-  /* Animation si besoin ! Juste a appliquer dans une class pour faire marcher l'animation */
+/* Animation si besoin ! Juste a appliquer dans une class pour faire marcher l'animation */
 
 /* VERTICAL TOP */
 
@@ -190,16 +180,16 @@ footer a {
 /* HORIZONTAL RIGHT */
 
 .revealHR {
-position: relative;
-transform: translateX(150px);
-opacity: 0;
-transition: 2s all ease;
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
 }
 
 .revealHR.active {
-transform: translateX(0);
-opacity: 1;
-} 
+  transform: translateX(0);
+  opacity: 1;
+}
 
 /* ________________ */
 
@@ -215,6 +205,6 @@ opacity: 1;
 .revealHL.active {
   transform: translateX(0);
   opacity: 1;
-} 
+}
 
 /* _______________ */

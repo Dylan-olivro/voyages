@@ -69,8 +69,8 @@ h1 {
 .gallery__caption {
   position: absolute;
   bottom: 0;
-  left: 0;
-  padding: 25px 15px 15px;
+  text-align: center;
+  padding: 25px 0 15px;
   width: 100%;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
