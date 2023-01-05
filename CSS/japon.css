@@ -1,6 +1,6 @@
   /* main */
   main{
-    margin: 0 2% 10% 0;
+    margin: 0 1% 10% 1%;
   }
   h1 {
     text-align: center;
@@ -157,10 +157,67 @@ span {
  opacity: 0;}
 
  .description:hover .text{
-  opacity: 1;}
-  
+  opacity: 1;
+transition: 1s;
+ }
   /* .ville:hover .text{
     opacity: 1;
   } */
 
 /* fin carousel */
+
+.page_responsive{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+
+.villes_carousel{
+  background-color: rgba(0, 0, 0, 0.65);
+width: 60%;
+height: 2100px;
+}
+.page_responsive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container{
+  display: none;
+}
+img{
+  border-radius: 10px;
+  width: 30%;
+}
+.villes{
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70em;
+}
+
+h3{
+  margin: 5px 0 0 0;
+  text-decoration: underline;
+}
+p{
+  margin: 5px 0 50px 0;
+  max-width: 250px;
+  text-align: justify;
+}
+
+/* étonnament ça a calé le footer à gauche alors je l'ai forcé là à reprendre sa place */
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* j'ai du redimensionner individuellement le drapeau du h1 */
+#flag{
+  width: 7%;
+  border-radius: 10px;
+}
+}

@@ -7,15 +7,6 @@
     margin: 0;
   }
     
-  /* main {
-    margin: 7% auto 2%;
-    padding: 40px 10px;
-    justify-content: center;
-    width: 90%; 
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 15px;
-  } */
   h1 {
     text-align: center;
     color: var(--color-text);
@@ -74,7 +65,6 @@ h1 img{
     justify-content: center;
   }
     
-  /* page real */
   .container{
     width: 82%;
     display: flex;
@@ -107,5 +97,21 @@ h1 img{
   .relief{
     width: 40%;
   }
-  /* fin page real */
   
+
+  @media screen and (max-width:768px) {
+
+    .container{
+      flex-direction: column;
+    }
+    .text{
+      margin: 0px 10px;
+    }
+    .contenu{
+      /* border: solid; */
+      width: 100%;
+    }
+  .colonne{
+    margin: 10px 0;
+  }
+}

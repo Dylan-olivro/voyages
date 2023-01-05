@@ -30,24 +30,45 @@ main img{
     display: flex;
     flex-direction: column;
     width: 20%;
+    align-items: center;
 }
-main p{
-position: absolute;
-opacity: 0;}
 
+main p{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  width: 16%;
+  text-align: justify;
+  padding: 5px;
+  border-radius: 5px;
+  /* margin-bottom: 0; */
+  margin: 0 2%;
+}
+/* div qui prend l'image et le texte pour caler celui-ci en bas de l'image */
+.description{
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
 /* texte en hover sur les photos */
 .ville:hover p{
 opacity: 1;  
 transition: 0.5s;
+transform: translateY(-30px);
 }
-main img:hover{
+
+/* main img:hover{
     opacity: 0.5;
     transition: 0.5s;
-}
+} */
+
+/* emplacement des 3 boutons d'iles */
 .iles{
     display: flex;
-    margin-top: 20%;
+    margin-top: 8%;
 }
+
 main a {
     margin: 15px;
     text-decoration: none;
@@ -56,8 +77,10 @@ main a {
     border-radius: 5px;
     text-transform: uppercase;
     color: white;
+    z-index: 1;
   }
 
+  /* rubriques ouvertes */
   .modal {
     visibility: hidden;
     opacity: 0;
@@ -68,7 +91,6 @@ main a {
     align-items: center;
     justify-content: center;
     transition: all .4s;
-    margin-bottom: 0px;
   }
   .modal:target {
     visibility: visible;
@@ -77,13 +99,12 @@ main a {
   .modal_content {
     display: flex;
     justify-content: space-around;
-    background-color: green;
     border-radius: 10px;
     position: relative;
     width: 1100px;
     background: var(--color-background);
     padding: 1.5em 2em;
-    margin-top: 200px;
+    margin-top: 150px;
   }
   
   .modal_close {
