@@ -1,3 +1,4 @@
+/* TITLE */
 h1 {
   text-align: center;
   color: var(--color-text);
@@ -25,6 +26,8 @@ span::before {
 span:hover::before {
   transform: scaleY(1);
 }
+
+/* CARD */
 .card-france {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -55,11 +58,15 @@ span:hover::before {
   align-self: center;
 }
 
+/* RESPONSIVE */
+/* LAPTOP */
 @media screen and (max-width: 1025px) {
   .text-card {
     line-height: 1;
   }
 }
+
+/* TABLET */
 @media screen and (max-width: 768px) and (min-width: 426px) {
   .bloc {
     flex-direction: column;
@@ -72,6 +79,8 @@ span:hover::before {
     line-height: 1.5;
   }
 }
+
+/* MOBILE */
 @media screen and (max-width: 425px) {
   .bloc {
     flex-direction: column;

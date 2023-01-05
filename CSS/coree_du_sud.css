@@ -3,6 +3,8 @@
   justify-content: center;
   margin: 5% 0;
 }
+
+/* CARD */
 .card {
   background-color: var(--color-background);
   border: 1px solid black;
@@ -18,7 +20,7 @@
   padding: 0 3% 3% 3%;
   margin: auto;
 }
-i {
+main i {
   margin-right: 2%;
 }
 .card-img {
@@ -49,6 +51,8 @@ i {
   animation: rightCard 0.5s;
   animation-fill-mode: both;
 }
+
+/* ANIMATION CARD */
 @keyframes leftCard {
   0% {
     transform: rotate(-20deg) scale(0.9);
@@ -108,6 +112,9 @@ i {
 .card-title {
   margin: 12px;
 }
+
+/* RESPONSIVE */
+/* TABLET */
 @media screen and (max-width: 768px) and (min-width: 426px) {
   .left {
     transform: rotate(0deg) scale(1);
@@ -130,6 +137,8 @@ i {
     font-size: 0.7rem;
   }
 }
+
+/* MOBILE */
 @media screen and (max-width: 425px) {
   .bloc {
     flex-direction: column;

@@ -1,3 +1,4 @@
+/* TITLE */
 h1 {
   text-align: center;
 }
@@ -23,6 +24,8 @@ h1 {
 #title:hover::before {
   transform: scaleX(1);
 }
+
+/* GALLERY */
 .gallery {
   display: flex;
   padding: 2px;
@@ -85,7 +88,7 @@ h1 {
 }
 
 /* RESPONSIVE */
-
+/* TABLET */
 @media screen and (max-width: 768px) and (min-width: 426px) {
   .gallery {
     flex-wrap: wrap;
@@ -104,6 +107,8 @@ h1 {
     height: 75vh;
   }
 }
+
+/* MOBILE */
 @media screen and (max-width: 425px) {
   .gallery {
     flex-wrap: wrap;
