@@ -1,36 +1,36 @@
-  /* main */
-  main{
-    margin: 0 1% 10% 1%;
-  }
-  h1 {
-    text-align: center;
-    color: var(--color-text);
-    font-size: 3rem;
-    position: relative;
-  }
-  h1 img{
-    width: 4%;
-    border-radius: 5px;
-  }  
-  
-  /* carousel */
-  
-  .villes_carousel {
-    /* position: absolute; */
-    margin: 4% auto 2%;
-    padding: 40px 10px;
-    justify-content: center;
-    width: 90%; 
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.65);
-    border-radius: 15px;
-    display: flex;
-  }
-  .container {
-    /* display: flex; */
-    position: absolute;
-    width: 400px;
-    margin: 0px auto 0 auto;
+/* main */
+main {
+  margin: 0 1% 10% 1%;
+}
+h1 {
+  text-align: center;
+  color: var(--color-text);
+  font-size: 3rem;
+  position: relative;
+}
+h1 img {
+  width: 4%;
+  border-radius: 5px;
+}
+
+/* carousel */
+
+.villes_carousel {
+  /* position: absolute; */
+  margin: 4% auto 2%;
+  padding: 40px 10px;
+  justify-content: center;
+  width: 90%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 15px;
+  display: flex;
+}
+.container {
+  /* display: flex; */
+  position: absolute;
+  width: 400px;
+  margin: 0px auto 0 auto;
   perspective: 1000px;
 }
 
@@ -38,14 +38,14 @@
   /* position: absolute; */
   width: 100%;
   /* height: 100%; */
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
   animation: rotate360 45s infinite forwards linear;
 }
-.carousel:hover{
+.carousel:hover {
   animation-play-state: paused;
 }
 
-.carousel_face { 
+.carousel_face {
   align-items: flex-end;
   position: absolute;
   width: 80%;
@@ -59,7 +59,7 @@
   border-radius: 10px;
 }
 
-.ville{
+.ville {
   display: flex;
   justify-content: center;
 }
@@ -75,56 +75,56 @@ span {
 
 .carousel_face:nth-child(1) {
   background-image: url("../ASSETS/Japon/drapeau.png");
-  transform: rotateY(  0deg) translateZ(430px); 
+  transform: rotateY(0deg) translateZ(430px);
   opacity: 0.5;
 }
 .carousel_face:nth-child(2) {
   background-image: url("../ASSETS/Japon/tokyo.jpg");
-  transform: rotateY(  60deg) translateZ(430px); 
+  transform: rotateY(60deg) translateZ(430px);
   opacity: 0.5;
 }
-.carousel_face:nth-child(3) { 
+.carousel_face:nth-child(3) {
   background-image: url("../ASSETS/Japon/kyoto.jpg");
-  transform: rotateY( 120deg) translateZ(430px); 
+  transform: rotateY(120deg) translateZ(430px);
   opacity: 0.5;
-  }
+}
 .carousel_face:nth-child(4) {
   background-image: url("../ASSETS/Japon/osaka.jpg");
-  transform: rotateY( 180deg) translateZ(430px);
-  opacity: 0.5; 
-  }
-.carousel_face:nth-child(5) {
-  background-image: url("../ASSETS/Japon/hiroshima.jpg");
-  transform: rotateY(240deg) translateZ(430px); 
+  transform: rotateY(180deg) translateZ(430px);
   opacity: 0.5;
 }
-.carousel_face:nth-child(6) { 
+.carousel_face:nth-child(5) {
+  background-image: url("../ASSETS/Japon/hiroshima.jpg");
+  transform: rotateY(240deg) translateZ(430px);
+  opacity: 0.5;
+}
+.carousel_face:nth-child(6) {
   background-image: url("../ASSETS/Japon/kurashiki.jpg");
- transform: rotateY(300deg) translateZ(430px);
- opacity: 0.5; 
+  transform: rotateY(300deg) translateZ(430px);
+  opacity: 0.5;
 }
 
-.carousel_face:nth-child(1):hover{
+.carousel_face:nth-child(1):hover {
   opacity: 1;
   transition: 0.5s;
 }
-.carousel_face:nth-child(2):hover{
+.carousel_face:nth-child(2):hover {
   opacity: 1;
   transition: 0.5s;
 }
-.carousel_face:nth-child(3):hover{
+.carousel_face:nth-child(3):hover {
   opacity: 1;
   transition: 0.5s;
 }
-.carousel_face:nth-child(4):hover{
+.carousel_face:nth-child(4):hover {
   opacity: 1;
   transition: 0.5s;
 }
-.carousel_face:nth-child(5):hover{
+.carousel_face:nth-child(5):hover {
   opacity: 1;
   transition: 0.5s;
 }
-.carousel_face:nth-child(6):hover{
+.carousel_face:nth-child(6):hover {
   opacity: 1;
   transition: 0.5s;
 }
@@ -138,86 +138,85 @@ span {
   }
 }
 
-.villes_responsive{
+.villes_responsive {
   display: none;
 }
 /* fond opaque + texte au mileu en hover */
 
-
 .text {
- background-color: rgba(255, 255, 255, 0.253);
- /* -webkit-text-stroke: 1px;
+  background-color: rgba(255, 255, 255, 0.253);
+  /* -webkit-text-stroke: 1px;
  -webkit-text-stroke-color: white; */
- font-weight: bold;
- border-radius: 10px;
- text-align: justify;
- color: black;
- font-size: 16px;
- padding: 5px 5px;
- opacity: 0;}
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: justify;
+  color: black;
+  font-size: 16px;
+  padding: 5px 5px;
+  opacity: 0;
+}
 
- .description:hover .text{
+.description:hover .text {
   opacity: 1;
-transition: 1s;
- }
-  /* .ville:hover .text{
+  transition: 1s;
+}
+/* .ville:hover .text{
     opacity: 1;
   } */
 
 /* fin carousel */
 
-.page_responsive{
+.page_responsive {
   display: none;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
+  .villes_carousel {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 60%;
+    height: 2100px;
+  }
+  .page_responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.villes_carousel{
-  background-color: rgba(0, 0, 0, 0.65);
-width: 60%;
-height: 2100px;
-}
-.page_responsive{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .container {
+    display: none;
+  }
+  main img {
+    border-radius: 10px;
+    width: 30%;
+  }
+  .villes {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70em;
+  }
 
-.container{
-  display: none;
-}
-img{
-  border-radius: 10px;
-  width: 30%;
-}
-.villes{
-  color: var(--color-text);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70em;
-}
+  h3 {
+    margin: 5px 0 0 0;
+    text-decoration: underline;
+  }
+  p {
+    margin: 5px 0 50px 0;
+    max-width: 250px;
+    text-align: justify;
+  }
 
-h3{
-  margin: 5px 0 0 0;
-  text-decoration: underline;
-}
-p{
-  margin: 5px 0 50px 0;
-  max-width: 250px;
-  text-align: justify;
-}
+  /* étonnament ça a calé le footer à gauche alors je l'ai forcé là à reprendre sa place */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* étonnament ça a calé le footer à gauche alors je l'ai forcé là à reprendre sa place */
-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* j'ai du redimensionner individuellement le drapeau du h1 */
-#flag{
-  width: 7%;
-  border-radius: 10px;
-}
+  /* j'ai du redimensionner individuellement le drapeau du h1 */
+  #flag {
+    width: 7%;
+    border-radius: 10px;
+  }
 }
