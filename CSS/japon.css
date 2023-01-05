@@ -1,5 +1,21 @@
   /* main */
-  main {
+  main{
+    margin: 0 2% 10% 0;
+  }
+  h1 {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 3rem;
+    position: relative;
+  }
+  h1 img{
+    width: 4%;
+    border-radius: 5px;
+  }  
+  
+  /* carousel */
+  
+  .villes_carousel {
     /* position: absolute; */
     margin: 4% auto 2%;
     padding: 40px 10px;
@@ -8,30 +24,14 @@
     height: 400px;
     background-color: rgba(0, 0, 0, 0.65);
     border-radius: 15px;
+    display: flex;
   }
-  h1 {
-    text-align: center;
-    color: var(--color-text);
-    font-size: 3rem;
-    position: relative;
-  }
-h1 img{
-  width: 4%;
-  border-radius: 5px;
-}  
-
-/* carousel */
-
-.container {
-  /* display: flex; */
-  position: absolute;
-  width: 400px;
-  margin: 0px auto 0 auto;
+  .container {
+    /* display: flex; */
+    position: absolute;
+    width: 400px;
+    margin: 0px auto 0 auto;
   perspective: 1000px;
-}
-
-.villes_carousel{
-  display: flex;
 }
 
 .carousel {
