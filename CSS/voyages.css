@@ -3,7 +3,15 @@
   --color-text: #fff;
 }
 * {
+  scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  
+
+}
+
+html,body{
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -106,99 +114,62 @@ footer a {
 
 /* MEDIA QUERY POUR MOBILE / BURGER */
 @media screen and (max-width: 768px) {
-  #burger {
-    z-index: 10001;
-    width: 30px;
-    height: 2px;
-    background: white;
-    display: inline-block;
-    position: relative;
-  }
-  #burger::before,
-  #burger::after {
-    content: "";
-    width: 30px;
-    height: 2px;
-    background: white;
-    display: inline-block;
-    position: absolute;
-    transform-origin: center;
-    transition: all 0.3s ease;
-  }
-  #burger::before {
-    top: -7px;
-  }
-  #burger::after {
-    top: 7px;
+
+  html,body{
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
-  #burger.open {
-    background: transparent;
-  }
-  #burger.open::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-  #burger.open::after {
-    transform: rotate(-45deg);
-    top: 0;
-  }
-
-  .aNav {
-    font-size: 2rem;
-  }
-
-  ul {
+  header{
     display: flex;
     flex-direction: column;
-    background: rgb(0, 0, 0, 0.85);
-    position: absolute;
-    height: 100%;
-
-    transform: scaleY(0);
-    transform-origin: top;
+  }
+  
+  .aNav{
+   font-size: 15px;
   }
 
-  ul.open {
-    transform: scaleY(1);
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+  h2{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10%;
+  }
+
+  #link-btn{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+
+  html,body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  header{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
   }
-  ul ul {
-    display: block;
-    position: absolute;
-  }
-  ul li:hover {
-    transform: scale(1.2);
-  }
-  nav ul li ul li a {
-    visibility: visible;
-    display: block;
-    position: absolute;
-    background-color: red;
+  
+  .pays{
+   font-size: 10px;
   }
 
-  .aNav {
-    display: block;
+  h2{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 8px;
+    margin-bottom: 10%;
   }
-  #link-btn {
+
+  #link-btn{
     display: none;
   }
 }
 
   /* Animation si besoin ! Juste a appliquer dans une class pour faire marcher l'animation */
- 
-  *{
-    scroll-behavior: smooth;
-  }
 
 /* VERTICAL TOP */
 
