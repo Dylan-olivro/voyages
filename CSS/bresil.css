@@ -43,7 +43,7 @@ h1 img{
     background-color: var(--color-background);
     border-radius: 15px;
   }
- 
+
   .contenu{
     /* border: solid; */
     width: 80%;
@@ -98,6 +98,14 @@ h1 img{
     border-radius: 15px;
     width: 80%;
   }
-  
+  .plan_proche{
+    width: 60%;
+  }
+  .ecusson{
+    width: 40%;
+  }
+  .relief{
+    width: 40%;
+  }
   /* fin page real */
   

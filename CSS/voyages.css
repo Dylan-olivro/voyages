@@ -73,6 +73,26 @@ ul ul li {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.btn{
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  padding: 1%;
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  /* margin: 0 10px 10px 0; */
+}
+#link-btn {
+  color: #000;
+}
+.btn:hover{
+  background-color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
 footer {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -85,7 +105,7 @@ footer a {
 }
 
 /* MEDIA QUERY POUR MOBILE / BURGER */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #burger {
     z-index: 10001;
     width: 30px;
@@ -169,7 +189,11 @@ footer a {
   .aNav {
     display: block;
   }
+  #link-btn {
+    display: none;
+  }
 }
+
   /* Animation si besoin ! Juste a appliquer dans une class pour faire marcher l'animation */
  
   *{
