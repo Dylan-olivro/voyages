@@ -94,9 +94,7 @@ h1 {
     width: 100%;
     transition: 0.5s;
     object-fit: cover;
-    position: relative;
-    transform-style: preserve-3d;
-    animation: rotate 30s linear infinite;
+    position: relative; 
 }
 
 .format1 {

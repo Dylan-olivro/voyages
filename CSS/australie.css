@@ -1,20 +1,23 @@
 /*main*/
 
+/* H1 */
 h1 {
     display: flex;
     justify-content: center;
 
 }
 
-.select {
+/* Div select */
+/* .select {
     padding-bottom: 10px;
-}
+} */
 
 .block-item-cat-list {
     max-width: 300px;
     margin: auto;
 }
 
+/* Modifier le TITRE avec Span */
 .select-title span:after {
     font-family: 'Font Awesome 5 Pro';
     font-size: inherit;
@@ -32,11 +35,7 @@ h1 {
     text-align: center;
 }
 
-.select-continent h3 {
-    margin: 0;
-    background: var(--color-filter);
-    text-align: center;
-}
+
 
 .select-content {
     position: absolute;
@@ -134,6 +133,7 @@ h1 {
     animation: bounceInLeft 1s backwards;
 }
 
+/* Animations du côter droit */
 @keyframes bounceInRight {
 
     from,
@@ -167,7 +167,7 @@ h1 {
     }
 }
 
-
+/* Animations du côter gauche */
 @keyframes bounceInLeft {
 
     from,
