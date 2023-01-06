@@ -138,34 +138,46 @@
 
     <!-- MAIN -->
     <main>
+      <!-- Etats-Unis -->
       <h1>ETATS-UNIS</h1>
       <section>
         <video id="slider" autoplay muted loop>
           <source src="./ASSETS/etats-unis/video1.mp4" type="video/mp4" />
         </video>
         <ul class="navigation">
+          <!-- Drapeau Américain -->
           <li onclick="videoUrl('./ASSETS/etats-unis/video1.mp4')">
             <img src="thumb1" alt="" />
             <h2>Drapeau Américain</h2>
           </li>
+
+          <!-- Statue de la Liberté -->
           <li onclick="videoUrl('./ASSETS/etats-unis/video2.mp4')">
             <img src="thumb2" alt="" />
             <h2>Statue de la liberté</h2>
           </li>
+
+          <!-- Rue de New-York -->
           <li onclick="videoUrl('./ASSETS/etats-unis/video3.mp4')">
             <img src="thumb3" alt="" />
             <h2>Rue de New-York</h2>
           </li>
+
+          <!-- Vue satellite -->
           <li onclick="videoUrl('./ASSETS/etats-unis/video4.mp4')">
             <img src="thumb4" alt="" />
             <h2>Vue satellite</h2>
           </li>
+
+          <!-- Broadway -->
           <li onclick="videoUrl('./ASSETS/etats-unis/video5.mp4')">
             <img src="thumb5" alt="" />
             <h2>Broadway</h2>
           </li>
         </ul>
       </section>
+
+      <!-- Script des éléments en Slider -->
       <script type="text/javascript">
         function videoUrl(hmmmmm) {
           document.getElementById("slider").src = hmmmmm;
