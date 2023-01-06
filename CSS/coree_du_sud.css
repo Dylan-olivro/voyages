@@ -51,7 +51,9 @@ main i {
   animation: rightCard 0.5s;
   animation-fill-mode: both;
 }
-
+.card-filter:hover {
+  filter: invert(1);
+}
 /* ANIMATION CARD */
 @keyframes leftCard {
   0% {

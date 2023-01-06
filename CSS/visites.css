@@ -1,0 +1,60 @@
+.bloc {
+  background-color: var(--color-background);
+  width: 50%;
+  margin: 6% auto 10%;
+  border-radius: 20px;
+  padding-bottom: 3%;
+}
+h2 {
+  color: var(--color-text);
+  text-align: center;
+  padding: 2%;
+  margin-bottom: 0;
+}
+table {
+  background-color: var(--color-text);
+  margin: auto;
+  width: 85%;
+  border-collapse: collapse;
+}
+table img {
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+th {
+  background-color: #009eff;
+  border: 1px solid gray;
+  padding: 1% 0;
+}
+td {
+  text-align: center;
+  width: 17%;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.check {
+  color: green;
+}
+.cross {
+  color: red;
+}
+
+.table-flag {
+  width: 32%;
+}
+.table-flag-bloc {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  .bloc {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .bloc {
+    width: 100%;
+  }
+}
