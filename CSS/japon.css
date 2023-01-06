@@ -2,15 +2,21 @@
 main {
   margin: 0 1% 10% 1%;
 }
+.entete{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
 h1 {
-  text-align: center;
   color: var(--color-text);
   font-size: 3rem;
-  position: relative;
 }
-h1 img {
+
+.entete img {
   width: 4%;
+  height: 50%;
   border-radius: 5px;
+  margin-left: 1%;
 }
 
 /* carousel */
@@ -170,10 +176,10 @@ span {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
   .villes_carousel {
     background-color: rgba(0, 0, 0, 0.65);
-    width: 60%;
+    width: 80%;
     height: 2100px;
   }
   .page_responsive {
@@ -185,6 +191,10 @@ span {
   .container {
     display: none;
   }
+  .entete img {
+    width: 7%;
+  }
+  
   main img {
     border-radius: 10px;
     width: 30%;
@@ -201,22 +211,51 @@ span {
     margin: 5px 0 0 0;
     text-decoration: underline;
   }
-  p {
+  main p {
     margin: 5px 0 50px 0;
     max-width: 250px;
     text-align: justify;
   }
+}
 
-  /* étonnament ça a calé le footer à gauche alors je l'ai forcé là à reprendre sa place */
-  footer {
+@media screen and (max-width: 425px) {
+  .villes_carousel {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 80%;
+    height: 1650px;
+  }
+  .page_responsive {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* j'ai du redimensionner individuellement le drapeau du h1 */
-  #flag {
-    width: 7%;
+  .container {
+    display: none;
+  }
+  .entete img {
+    width: 12%;
+  }
+  
+  main img {
     border-radius: 10px;
+    width: 20%;
+  }
+  .villes {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70em;
+  }
+
+  h3 {
+    margin: 5px 0 0 0;
+    text-decoration: underline;
+  }
+  main p {
+    margin: 5px 0 50px 0;
+    max-width: 250px;
+    text-align: justify;
   }
 }

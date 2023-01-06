@@ -6,16 +6,20 @@
     flex-direction: column;
     margin: 0;
   }
-    
+  .entete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   h1 {
-    text-align: center;
     color: var(--color-text);
     font-size: 3rem;
-    position: relative;
   }
-h1 img{
+.entete img{
   width: 4%;
   border-radius: 5px;
+  height: 50%;
+  margin-left: 1%;
 }  
 
   main{
@@ -24,9 +28,6 @@ h1 img{
     background-attachment: fixed;
     min-height: 45vh;
     width: 100%;
-    display: flex;
-    justify-content: center;  
-    /* flex-direction: column; */
     margin: 1% auto 2%;
   }
 
@@ -68,6 +69,7 @@ h1 img{
   .container{
     width: 82%;
     display: flex;
+    margin: auto;
   }
   .rubrique{
     display: flex;
@@ -99,7 +101,7 @@ h1 img{
   }
   
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:768px) and (min-width: 426px)  {
 
     .container{
       flex-direction: column;
@@ -114,4 +116,26 @@ h1 img{
   .colonne{
     margin: 10px 0;
   }
+  .entete img{
+    width: 7%;
+  }
+}
+@media screen and (max-width: 425px)  {
+
+  .container{
+    flex-direction: column;
+  }
+  .text{
+    margin: 0px 10px;
+  }
+  .contenu{
+    /* border: solid; */
+    width: 100%;
+  }
+.colonne{
+  margin: 10px 0;
+}
+.entete img{
+  width: 12%;
+}
 }

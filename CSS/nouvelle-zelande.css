@@ -1,20 +1,27 @@
 h1 {
-    text-align: center;
     color: var(--color-text);
     font-size: 3rem;
-    position: relative;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: black;
 }
-h1 img{
-  width: 5%;
-  border-radius: 5px;
-}  
 h2{
     color: var(--color-text);
     text-align: center;
     margin-bottom: 0px;
 }
+.entete{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.entete img {
+  width: 6%;
+  height: 50%;
+  border-radius: 5px;
+  margin-left: 1%;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -116,4 +123,26 @@ main a {
     text-decoration: none;
     font-weight: bolder;
   }
-/* retour haut de page */
+
+@media screen and (max-width:768px) and (min-width: 426px)  {
+
+.entete img{
+  width: 7%;
+}
+.modal_content{
+  margin-top: 200px;
+}
+}
+@media screen and (max-width: 425px)  {
+
+.entete img{
+width: 12%;
+}
+.entete h1{
+  font-size: 2rem;
+}
+.modal_close{
+  right: -5px;
+}
+
+}
